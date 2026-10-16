@@ -10,11 +10,10 @@ public class CalculatorApp {
         System.out.println("-----Calculator-------");
 
         System.out.print("Enter the first number");
-        int firstNumber= myScanner.nextInt();
+        int firstNumber= Integer.parseInt(myScanner.nextLine());
 
         System.out.print("Enter the second number");
-        int secondNumber= myScanner.nextInt();
-        myScanner.nextLine();
+        int secondNumber= Integer.parseInt(myScanner.nextLine());
 
 
         System.out.print("Please type A for add, S for subtract, M for Multiply or D for Divide");
@@ -43,7 +42,7 @@ public class CalculatorApp {
             int division = firstNumber - secondNumber;
             System.out.println("Result= " + division);
         }
-        System.out.println("END");
+
 
     }
 }
